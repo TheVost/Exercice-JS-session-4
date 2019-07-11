@@ -1,0 +1,48 @@
+/**
+*   Auteur : Cédric Devost
+*   Description : Fichier css de l'exercice 1 du TP1 de JS
+*   Date : 2019-05-29
+*/
+
+main{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 50px;
+}
+
+th{
+    background-color: cadetblue;
+}
+
+td, th{
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 0 20px;
+}
+
+form{
+    width: 260px;
+    margin: 0 auto;
+}
+
+.label{
+    float: left;
+}
+
+.input{
+    float: right;
+}
+
+#input, #modifier{
+    clear: both;
+    width: 260px;
+    margin: 0 auto;
+}

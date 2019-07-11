@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<!--
+*   Auteur : Cédric Devost
+*   Description : Fichier index.html de l'exercice 1 du TP1 de JS
+*   Date : 2019-05-29
+-->
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="x, y">
+    <meta name="author" content="Cédric Devost">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- appels aux scripts externes utilisés -->
+    <script src="module.js"></script>
+    <script src="scripts.js"></script>
+    <title>DevostC TP1 EX1</title>
+</head>
+<body>
+    <main>
+        <h1>Visiteurs</h1>
+        
+        <!-- table html qui sera utilisé pour afficher les visiteurs sauvergardés -->
+        <table id="visiteurs"></table>
+        
+        <!-- formulaire de saisie pour un nouveau visiteur -->
+        <form>
+            <div class="label">
+                <label>Prénom : </label><br>
+                <label>Nom : </label><br>
+                <label>Courriel : </label><br>
+            </div>
+            <div class="input">
+                <input id="prenom" type="text"><br>
+                <input id="nom" type="text"><br>
+                <input id="courriel" type="email"><br><br>
+            </div>
+        </form>
+        <div id='input'>
+            <input id="annuler" type="submit" value="Annuler">
+            <input id="sauver" type="submit" value="Sauver">
+        </div>
+        
+        <!-- formulaire de saisie pour modifier les infos d'un visiteur -->
+        <form id="modification">
+            <h2>Modifications</h2>
+            <div class="label">
+                <label>Prénom : </label><br>
+                <label>Nom : </label><br>
+                <label>Courriel : </label><br>
+            </div>
+            <div class="input">
+                <input id="modifPrenom" type="text"><br>
+                <input id="modifNom" type="text"><br>
+                <input id="modifCourriel" type="text">
+                <input type="hidden" id="modifId"><br><br>
+            </div>
+            <input id="modifier" type="submit" value="Modifier">
+        </form>
+    </main>
+</body>
+</html>
